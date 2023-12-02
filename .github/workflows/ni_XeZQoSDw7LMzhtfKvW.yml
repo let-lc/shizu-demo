@@ -40,6 +40,7 @@ jobs:
         run: pnpm check && pnpm run ping ni_XeZQoSDw7LMzhtfKvW
       - name: Update ping records
         run: |
+          git pull
           git config --global user.name "Shizu"
           git config --global user.email "<>"
           git add data
