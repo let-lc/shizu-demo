@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Start Pinging
-        run: pnpm run ping DhrcMqTB-iuUdXuO7EWiq
+        run: pnpm check && pnpm run ping DhrcMqTB-iuUdXuO7EWiq
       - name: Update ping records
         run: |
           git config --global user.name "Shizu"
