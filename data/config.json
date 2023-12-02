@@ -1,0 +1,56 @@
+{
+  "buildCron": "30 * * * *",
+  "basePath": "",
+  "servers": [
+    {
+      "id": "ni_XeZQoSDw7LMzhtfKvW",
+      "name": "Cloudflare DNS",
+      "pingCron": "0 * * * *",
+      "pingAttempts": 10,
+      "maxRecordHistory": 2592000,
+      "serverType": "tcp",
+      "host": {
+        "from": "config",
+        "value": "1.1.1.1"
+      },
+      "port": {
+        "from": "config",
+        "value": 53
+      }
+    },
+    {
+      "id": "YWTrD3i0DFpk5d39zOGnF",
+      "name": "Cloudflare DNS Homepage",
+      "pingCron": "0 0 * * *",
+      "pingAttempts": 1,
+      "maxRecordHistory": 86400,
+      "serverType": "http",
+      "method": "GET",
+      "url": {
+        "from": "config",
+        "value": "https://1.1.1.1/"
+      },
+      "body": {
+        "from": "config"
+      },
+      "statusCodes": "200-299"
+    },
+    {
+      "id": "DhrcMqTB-iuUdXuO7EWiq",
+      "name": "GitHub REST API",
+      "pingCron": "0 * * * *",
+      "pingAttempts": 5,
+      "maxRecordHistory": 2592000,
+      "serverType": "http",
+      "method": "GET",
+      "url": {
+        "from": "config",
+        "value": "https://api.github.com/octocat"
+      },
+      "body": {
+        "from": "config"
+      },
+      "statusCodes": "200"
+    }
+  ]
+}
