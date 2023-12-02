@@ -40,6 +40,8 @@ jobs:
         run: pnpm run ping ni_XeZQoSDw7LMzhtfKvW
       - name: Update ping records
         run: |
+          git config --global user.name "Shizu"
+          git config --global user.email "<>"
           git add data
-          git diff-index --quiet HEAD || git commit --author "Shizu <>" -m "Update ping records"
+          git diff-index --quiet HEAD || git commit -m "Update ping records"
           git push
