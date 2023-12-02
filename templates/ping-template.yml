@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Start Pinging
-        run: pnpm run ping -- $(id)
+        run: pnpm run ping $(id)
       - name: Update ping records
         run: |
           git add data
