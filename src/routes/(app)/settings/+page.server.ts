@@ -7,6 +7,7 @@ import {
   createBuildWorkflow,
   readConfig,
   removeBuildWorkflow,
+  writeConfig,
 } from '$lib/helpers/data';
 import { configFormSchema } from '$lib/types';
 
@@ -35,6 +36,7 @@ export const actions: Actions = {
     } else {
       const config = readConfig();
       config.buildCron = form.data.buildCron;
+      writeConfig(config);
       if (buildWorkflowExist()) {
         createBuildWorkflow();
       }
