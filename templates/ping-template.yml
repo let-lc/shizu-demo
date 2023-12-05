@@ -22,6 +22,7 @@ jobs:
         run: node ./src/lib/ping/ping.mjs $(id)
       - name: Update ping records
         run: |
+          git pull
           git config --global user.name "Shizu"
           git config --global user.email "<>"
           git add data
