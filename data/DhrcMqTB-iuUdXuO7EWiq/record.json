@@ -1,43 +1,6 @@
 [
   {
     "type": "http",
-    "ranAt": 1701803003259,
-    "method": "GET",
-    "time": {
-      "min": 18.279359,
-      "max": 150.880828,
-      "avg": 55.1001
-    },
-    "events": [
-      {
-        "success": true,
-        "status": 200,
-        "time": 150.880828
-      },
-      {
-        "success": true,
-        "status": 200,
-        "time": 57.51477
-      },
-      {
-        "success": true,
-        "status": 200,
-        "time": 22.432985
-      },
-      {
-        "success": true,
-        "status": 200,
-        "time": 18.279359
-      },
-      {
-        "success": true,
-        "status": 200,
-        "time": 26.392678
-      }
-    ]
-  },
-  {
-    "type": "http",
     "ranAt": 1701804338083,
     "method": "GET",
     "time": {
@@ -70,6 +33,154 @@
         "success": true,
         "status": 200,
         "time": 43.636922
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701804942257,
+    "method": "GET",
+    "time": {
+      "min": 4.543642,
+      "max": 98.069798,
+      "avg": 26.0517
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 98.069798
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 18.149259
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.620204
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.875829
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.543642
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701805529548,
+    "method": "GET",
+    "time": {
+      "min": 21.65274,
+      "max": 203.087229,
+      "avg": 82.9751
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 203.087229
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 146.505437
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 21.81918
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 21.65274
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 21.810863
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701806235266,
+    "method": "GET",
+    "time": {
+      "min": 3.940196,
+      "max": 96.223045,
+      "avg": 24.6198
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 96.223045
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 14.039715
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.734713
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 3.940196
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.161331
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701806855519,
+    "method": "GET",
+    "time": {
+      "min": 22.183302,
+      "max": 235.450354,
+      "avg": 95.0042
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 235.450354
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 169.131427
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 23.497233
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 24.758828
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 22.183302
       }
     ]
   }

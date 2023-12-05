@@ -1,52 +1,205 @@
 [
   {
     "type": "tcp",
-    "ranAt": 1701803037986,
+    "ranAt": 1701805421001,
     "time": {
-      "min": 8.4577,
-      "max": 10.7993,
-      "avg": 8.7977
+      "min": 1.7914,
+      "max": 3.4998,
+      "avg": 2.1524
     },
     "events": [
       {
         "success": true,
-        "time": 10.799281
+        "time": 3.499768
       },
       {
         "success": true,
-        "time": 8.831972
+        "time": 2.023206
       },
       {
         "success": true,
-        "time": 8.515976
+        "time": 2.10495
       },
       {
         "success": true,
-        "time": 8.604119
+        "time": 2.014631
       },
       {
         "success": true,
-        "time": 8.590394
+        "time": 2.090083
       },
       {
         "success": true,
-        "time": 8.476983
+        "time": 1.908242
       },
       {
         "success": true,
-        "time": 8.488535
+        "time": 1.961802
       },
       {
         "success": true,
-        "time": 8.457687
+        "time": 1.791382
       },
       {
         "success": true,
-        "time": 8.579214
+        "time": 2.154063
       },
       {
         "success": true,
-        "time": 8.632772
+        "time": 1.976098
+      }
+    ]
+  },
+  {
+    "type": "tcp",
+    "ranAt": 1701805451322,
+    "time": {
+      "min": 5.3083,
+      "max": 7.2045,
+      "avg": 5.751
+    },
+    "events": [
+      {
+        "success": true,
+        "time": 7.204468
+      },
+      {
+        "success": true,
+        "time": 5.620453
+      },
+      {
+        "success": true,
+        "time": 5.836598
+      },
+      {
+        "success": true,
+        "time": 5.54333
+      },
+      {
+        "success": true,
+        "time": 5.503727
+      },
+      {
+        "success": true,
+        "time": 5.336485
+      },
+      {
+        "success": true,
+        "time": 5.463971
+      },
+      {
+        "success": true,
+        "time": 5.308342
+      },
+      {
+        "success": true,
+        "time": 5.592662
+      },
+      {
+        "success": true,
+        "time": 6.099918
+      }
+    ]
+  },
+  {
+    "type": "tcp",
+    "ranAt": 1701806027983,
+    "time": {
+      "min": 1.3153,
+      "max": 3.2141,
+      "avg": 1.7785
+    },
+    "events": [
+      {
+        "success": true,
+        "time": 3.214122
+      },
+      {
+        "success": true,
+        "time": 1.682822
+      },
+      {
+        "success": true,
+        "time": 1.549103
+      },
+      {
+        "success": true,
+        "time": 1.496786
+      },
+      {
+        "success": true,
+        "time": 1.718548
+      },
+      {
+        "success": true,
+        "time": 1.878045
+      },
+      {
+        "success": true,
+        "time": 1.315268
+      },
+      {
+        "success": true,
+        "time": 1.627039
+      },
+      {
+        "success": true,
+        "time": 1.550576
+      },
+      {
+        "success": true,
+        "time": 1.752331
+      }
+    ]
+  },
+  {
+    "type": "tcp",
+    "ranAt": 1701806759584,
+    "time": {
+      "min": 1.5759,
+      "max": 3.9929,
+      "avg": 2.2648
+    },
+    "events": [
+      {
+        "success": true,
+        "time": 3.779843
+      },
+      {
+        "success": true,
+        "time": 3.992922
+      },
+      {
+        "success": true,
+        "time": 1.854335
+      },
+      {
+        "success": true,
+        "time": 1.882708
+      },
+      {
+        "success": true,
+        "time": 2.076219
+      },
+      {
+        "success": true,
+        "time": 1.575945
+      },
+      {
+        "success": true,
+        "time": 1.825682
+      },
+      {
+        "success": true,
+        "time": 1.812126
+      },
+      {
+        "success": true,
+        "time": 2.128738
+      },
+      {
+        "success": true,
+        "time": 1.719814
       }
     ]
   }
