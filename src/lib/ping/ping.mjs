@@ -191,7 +191,7 @@ const writePingRecord = (server, record) => {
     records.push(record);
   }
 
-  const notBefore = Date.now() - server.maxRecordHistory;
+  const notBefore = Date.now() - server.maxRecordHistory * 1000;
   console.log("Not before: ", notBefore);
   console.log(records.filter((record) => record.ranAt >= notBefore));
   writeFileSync(
