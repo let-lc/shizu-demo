@@ -38,10 +38,21 @@ export const ServerHttpConfig = z.object({
   /**
    * HTTP request URL.
    */
-  url: z.object({
-    from: ValueFrom,
-    value: z.string().min(1).url().describe('URL Value'),
-  }),
+  url: z
+    .discriminatedUnion('from', [
+      z.object({
+        from: z.literal<ValueFromType>('config'),
+        value: z.string().min(1).url().describe('URL Value'),
+      }),
+      z.object({
+        from: z.literal<ValueFromType>('env'),
+        value: z.string().min(1).describe('URL Value'),
+      }),
+    ])
+    .default({
+      from: 'config',
+      value: '',
+    }),
   /**
    * Request payload/body.
    */
@@ -84,10 +95,21 @@ export const ServerTcpConfig = z.object({
   /**
    * Server port.
    */
-  port: z.object({
-    from: ValueFrom,
-    value: z.number().min(1).max(65535).default(80).describe('Server Port'),
-  }),
+  port: z
+    .discriminatedUnion('from', [
+      z.object({
+        from: z.literal<ValueFromType>('config'),
+        value: z.number().min(1).max(65535).default(80).describe('Server Port'),
+      }),
+      z.object({
+        from: z.literal<ValueFromType>('env'),
+        value: z.string().min(1).describe('Server Port'),
+      }),
+    ])
+    .default({
+      from: 'config',
+      value: 80,
+    }),
 });
 
 /**

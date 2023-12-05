@@ -26,6 +26,7 @@ export type checkValidStatus = (
 export type HttpPingOptions = {
   method: HttpPingRecordType['method'];
   url: string;
+  body?: string;
   attempts: number;
   expectStatus: string;
 };

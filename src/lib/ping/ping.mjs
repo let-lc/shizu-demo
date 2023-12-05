@@ -69,7 +69,7 @@ const tcpPingAsync = async ({ host, port, attempts = 4 }) => {
 const checkValidStatus = (statusCode, validStatusList) => {
   return validStatusList.split(',').some((validStatus) => {
     if (validStatus.includes('-')) {
-      const range = validStatus.split('-').map(parseInt);
+      const range = validStatus.split('-').map((n) => parseInt(n, 10));
       return range[0] <= statusCode && statusCode <= range[1];
     } else {
       return parseInt(validStatus) === statusCode;
@@ -81,6 +81,7 @@ const checkValidStatus = (statusCode, validStatusList) => {
 const httpPingAsync = async ({
   method = 'GET',
   url,
+  body = '',
   attempts = 1,
   expectStatus = '200-299',
 }) => {
@@ -92,11 +93,19 @@ const httpPingAsync = async ({
     time: { min: Number.MAX_SAFE_INTEGER, max: 0, avg: 0 },
     events: [],
   };
+  /** @type { RequestInfo } */
+  const requestInfo = { method };
+  if (body) {
+    requestInfo.body = body;
+    requestInfo.headers = {
+      'Content-Type': 'application/json',
+    };
+  }
 
   for (let i = 0; i < attempts; i++) {
     const start = process.hrtime.bigint();
     try {
-      const { status } = await fetch(url, { method });
+      const { status } = await fetch(url, requestInfo);
       const time = Number(process.hrtime.bigint() - start) / 1e6;
 
       if (checkValidStatus(status, expectStatus)) {
@@ -184,24 +193,16 @@ const writePingRecord = (server, record) => {
 
   if (existsSync(recordFile)) {
     const prevRecords = JSON.parse(readFileSync(recordFile).toString());
-    console.log("Prev records:");
-    console.log(prevRecords);
+    console.log(`${prevRecords?.length} record previously.`);
     records.push(...prevRecords, record);
   } else {
     records.push(record);
   }
 
   const notBefore = Date.now() - server.maxRecordHistory * 1000;
-  console.log("Not before: ", notBefore);
-  console.log(records.filter((record) => record.ranAt >= notBefore));
-  writeFileSync(
-    recordFile,
-    JSON.stringify(
-      records.filter((record) => record.ranAt >= notBefore),
-      null,
-      2
-    )
-  );
+  const filteredRecords = records.filter((record) => record.ranAt >= notBefore);
+  console.log(`${filteredRecords.length - records.length} records filtered.`);
+  writeFileSync(recordFile, JSON.stringify(filteredRecords, null, 2));
 };
 
 const main = async () => {
@@ -225,6 +226,7 @@ const main = async () => {
       const record = await httpPingAsync({
         method: server.method,
         url: readConfigValue(server.url),
+        body: readConfigValue(server.body),
         attempts: server.pingAttempts,
         expectStatus: server.statusCodes,
       });

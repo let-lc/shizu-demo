@@ -3,7 +3,7 @@ name: SSG Build & Deploy
 
 on:
   schedule:
-    - cron: $(cron)
+    - cron: "$(cron)"
   workflow_dispatch:
 
 permissions:
