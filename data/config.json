@@ -5,7 +5,7 @@
     {
       "id": "ni_XeZQoSDw7LMzhtfKvW",
       "name": "Cloudflare DNS",
-      "pingCron": "0 * * * *",
+      "pingCron": "*/10 * * * *",
       "pingAttempts": 10,
       "maxRecordHistory": 2592000,
       "serverType": "tcp",
@@ -38,7 +38,7 @@
     {
       "id": "DhrcMqTB-iuUdXuO7EWiq",
       "name": "GitHub REST API",
-      "pingCron": "0 * * * *",
+      "pingCron": "5/10 * * * *",
       "pingAttempts": 5,
       "maxRecordHistory": 2592000,
       "serverType": "http",
