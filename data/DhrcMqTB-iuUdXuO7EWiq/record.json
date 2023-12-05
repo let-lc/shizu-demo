@@ -1,38 +1,38 @@
 [
   {
     "type": "http",
-    "ranAt": 1701777897002,
+    "ranAt": 1701781529051,
     "method": "GET",
     "time": {
-      "min": 4.49977,
-      "max": 96.042016,
-      "avg": 25.4509
+      "min": 21.033075,
+      "max": 144.474275,
+      "avg": 59.735
     },
     "events": [
       {
         "success": true,
         "status": 200,
-        "time": 96.042016
+        "time": 144.474275
       },
       {
         "success": true,
         "status": 200,
-        "time": 17.267164
+        "time": 90.383081
       },
       {
         "success": true,
         "status": 200,
-        "time": 4.845207
+        "time": 21.722403
       },
       {
         "success": true,
         "status": 200,
-        "time": 4.600488
+        "time": 21.061929
       },
       {
         "success": true,
         "status": 200,
-        "time": 4.49977
+        "time": 21.033075
       }
     ]
   }
