@@ -1,1 +1,39 @@
-[{"type":"http","ranAt":1701752647481,"method":"GET","time":{"min":66.161421,"max":130.244896,"avg":79.2726},"events":[{"success":true,"status":200,"time":130.244896},{"success":true,"status":200,"time":66.607276},{"success":true,"status":200,"time":66.161421},{"success":true,"status":200,"time":66.208895},{"success":true,"status":200,"time":67.140712}]}]
+[
+  {
+    "type": "http",
+    "ranAt": 1701756245043,
+    "method": "GET",
+    "time": {
+      "min": 8.652236,
+      "max": 101.41293,
+      "avg": 30.9957
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 101.41293
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 26.486704
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 8.888254
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 8.652236
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 9.538226
+      }
+    ]
+  }
+]
