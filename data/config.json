@@ -51,6 +51,41 @@
         "from": "config"
       },
       "statusCodes": "200"
+    },
+    {
+      "id": "u9WtrkmYu9ZIsRf90hrDV",
+      "name": "httpbin-post",
+      "pingCron": "*/20 * * * *",
+      "pingAttempts": 5,
+      "maxRecordHistory": 2592000,
+      "serverType": "http",
+      "method": "POST",
+      "url": {
+        "from": "config",
+        "value": "https://httpbin.org/post"
+      },
+      "body": {
+        "from": "config",
+        "value": "{\"a\": 1}"
+      },
+      "statusCodes": "200-299"
+    },
+    {
+      "id": "VQlq3mcxT65uGXimJwtz4",
+      "name": "Random Status",
+      "pingCron": "*/15 * * * *",
+      "pingAttempts": 20,
+      "maxRecordHistory": 2592000,
+      "serverType": "http",
+      "method": "GET",
+      "url": {
+        "from": "env",
+        "value": "STATUS_URL"
+      },
+      "body": {
+        "from": "config"
+      },
+      "statusCodes": "200-299,300,400,500"
     }
   ]
 }
