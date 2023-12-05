@@ -2,7 +2,7 @@ name: $(name)
 
 on:
   schedule:
-    - cron: $(cron)
+    - cron: "$(cron)"
   workflow_dispatch:
 
 concurrency:
