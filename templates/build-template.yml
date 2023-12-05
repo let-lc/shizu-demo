@@ -1,4 +1,5 @@
 name: SSG Build & Deploy
+name: SSG Build & Deploy
 
 on:
   schedule:
@@ -22,7 +23,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 21
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:

@@ -3,6 +3,9 @@
 	"version": "0.1.2",
 	"type": "module",
 	"private": true,
+	"engines": {
+		"node": ">=21.0.0"
+	},
 	"scripts": {
 		"dev": "tsx ./src/lib/helpers/init.ts & vite dev --port 3000",
 		"build": "vite build",
@@ -10,7 +13,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"init": "tsx ./src/lib/helpers/init.ts",
-		"ping": "tsx ./src/lib/helpers/ping.ts",
+		"ping": "node ./src/lib/ping/ping.mjs",
 		"lint": "eslint . & prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss --check .",
 		"lint:ui": " eslint ./src/lib/components/ui & prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss --check ./src/lib/components/ui",
 		"format": "eslint --fix . & prettier --plugin prettier-plugin-svelte --plugin prettier-plugin-tailwindcss --write .",
