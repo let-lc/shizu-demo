@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: 21
       - name: Start Pinging
+        env:
+          STATUS_URL: ${{ secrets.STATUS_URL }}
         run: node ./src/lib/ping/ping.mjs VQlq3mcxT65uGXimJwtz4
       - name: Update ping records
         run: |

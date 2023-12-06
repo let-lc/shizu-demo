@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 21
       - name: Start Pinging
+        $(env)
         run: node ./src/lib/ping/ping.mjs $(id)
       - name: Update ping records
         run: |

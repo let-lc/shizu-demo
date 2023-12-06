@@ -106,6 +106,18 @@ const fmtHolder = (name: string) => {
   return `$(${name})`;
 };
 
+const getEnvConfig = (config: {
+  from: ValueFromType;
+  value?: any;
+}): Array<string> => {
+  if (config.from === 'env') {
+    return [
+      `${' '.repeat(10)}${config.value}: \${{ secrets.${config.value} }}`,
+    ];
+  }
+  return [];
+};
+
 export const createServerWorkflow = (id: string) => {
   const server = getServerById(id);
   if (!server) {
@@ -118,6 +130,25 @@ export const createServerWorkflow = (id: string) => {
   template = template.replace(fmtHolder('name'), server.name);
   template = template.replace(fmtHolder('cron'), server.pingCron);
   template = template.replace(fmtHolder('id'), server.id);
+
+  const envList = [];
+
+  switch (server.serverType) {
+    case 'http': {
+      envList.push(...getEnvConfig(server.body));
+      envList.push(...getEnvConfig(server.url));
+      break;
+    }
+    case 'tcp':
+      envList.push(...getEnvConfig(server.host));
+      envList.push(...getEnvConfig(server.port));
+      break;
+  }
+
+  if (envList.length) {
+    const envValues = `env:\n${envList.join('\n')}`;
+    template = template.replace(fmtHolder('env'), envValues);
+  }
 
   writeFileSync(join(GH_WORKFLOW_FOLDER, `${id}.yml`), template);
 };

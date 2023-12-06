@@ -105,8 +105,12 @@ const httpPingAsync = async ({
   for (let i = 0; i < attempts; i++) {
     const start = process.hrtime.bigint();
     try {
-      const { status } = await fetch(url, requestInfo);
+      const response = await fetch(url, requestInfo);
       const time = Number(process.hrtime.bigint() - start) / 1e6;
+
+      const { status } = response;
+
+      console.log(await response.json());
 
       if (checkValidStatus(status, expectStatus)) {
         record.events.push({ success: true, status, time });
