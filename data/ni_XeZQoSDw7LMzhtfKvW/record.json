@@ -10657,5 +10657,56 @@
         "time": 1.927698
       }
     ]
+  },
+  {
+    "type": "tcp",
+    "ranAt": 1701953010951,
+    "time": {
+      "min": 5.175,
+      "max": 7.1373,
+      "avg": 5.5406
+    },
+    "events": [
+      {
+        "success": true,
+        "time": 7.137347
+      },
+      {
+        "success": true,
+        "time": 5.658242
+      },
+      {
+        "success": true,
+        "time": 5.26065
+      },
+      {
+        "success": true,
+        "time": 5.467156
+      },
+      {
+        "success": true,
+        "time": 5.417776
+      },
+      {
+        "success": true,
+        "time": 5.174953
+      },
+      {
+        "success": true,
+        "time": 5.184881
+      },
+      {
+        "success": true,
+        "time": 5.519093
+      },
+      {
+        "success": true,
+        "time": 5.294914
+      },
+      {
+        "success": true,
+        "time": 5.291338
+      }
+    ]
   }
 ]
