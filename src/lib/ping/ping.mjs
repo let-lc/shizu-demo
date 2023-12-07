@@ -95,6 +95,8 @@ const httpPingAsync = async ({
   };
   /** @type { RequestInfo } */
   const requestInfo = { method };
+  console.log(body);
+
   if (body) {
     requestInfo.body = body;
     requestInfo.headers = {
@@ -127,7 +129,7 @@ const httpPingAsync = async ({
     } catch (error) {
       const time = Number(process.hrtime.bigint() - start) / 1e6;
       const status = error.response?.status;
-
+      console.log(error);
       if (checkValidStatus(status, expectStatus)) {
         record.events.push({ success: true, status, time });
       } else {
