@@ -6104,5 +6104,57 @@
         }
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701909710294,
+    "method": "GET",
+    "time": {
+      "min": 0,
+      "max": 0,
+      "avg": 0
+    },
+    "events": [
+      {
+        "success": false,
+        "status": null,
+        "error": {
+          "name": "Unknown Error",
+          "message": "Unexpected token 'M', ...\"          MMM.      \"... is not valid JSON"
+        }
+      },
+      {
+        "success": false,
+        "status": null,
+        "error": {
+          "name": "Unknown Error",
+          "message": "Unexpected token 'M', ...\"          MMM.      \"... is not valid JSON"
+        }
+      },
+      {
+        "success": false,
+        "status": null,
+        "error": {
+          "name": "Unknown Error",
+          "message": "Unexpected token 'M', ...\"          MMM.      \"... is not valid JSON"
+        }
+      },
+      {
+        "success": false,
+        "status": null,
+        "error": {
+          "name": "Unknown Error",
+          "message": "Unexpected token 'M', ...\"          MMM.      \"... is not valid JSON"
+        }
+      },
+      {
+        "success": false,
+        "status": null,
+        "error": {
+          "name": "Unknown Error",
+          "message": "Unexpected token 'M', ...\"          MMM.      \"... is not valid JSON"
+        }
+      }
+    ]
   }
 ]
