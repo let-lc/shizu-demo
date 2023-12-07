@@ -2662,5 +2662,116 @@
         "time": 5.122296
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701906078199,
+    "method": "POST",
+    "time": {
+      "min": 5.922571,
+      "max": 99.788365,
+      "avg": 28.5158
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 99.788365
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 20.983436
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 7.499859
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 8.384914
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 5.922571
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701907559115,
+    "method": "POST",
+    "time": {
+      "min": 9.770121,
+      "max": 324.977706,
+      "avg": 164.0921
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 269.048327
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 206.701293
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 324.977706
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 9.963252
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 9.770121
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1701909098789,
+    "method": "POST",
+    "time": {
+      "min": 70.999308,
+      "max": 501.084935,
+      "avg": 240.2371
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 501.084935
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 477.204259
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 74.881397
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 70.999308
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 77.015376
+      }
+    ]
   }
 ]
