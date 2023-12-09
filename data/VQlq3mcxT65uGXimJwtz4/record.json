@@ -53337,5 +53337,168 @@
         "time": 59.40773
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1702126197972,
+    "method": "GET",
+    "time": {
+      "min": 8.950308,
+      "max": 9.833823,
+      "avg": 9.3156
+    },
+    "events": [
+      {
+        "success": false,
+        "status": 392,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 392 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 516,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 516 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 588,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 588 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 287,
+        "time": 9.833823
+      },
+      {
+        "success": false,
+        "status": 438,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 438 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 492,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 492 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 254,
+        "time": 9.162583
+      },
+      {
+        "success": true,
+        "status": 400,
+        "time": 8.950308
+      },
+      {
+        "success": false,
+        "status": 372,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 372 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 450,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 450 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 315,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 315 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 558,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 558 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 498,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 498 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 505,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 505 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 373,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 373 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 476,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 476 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 551,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 551 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 459,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 459 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 447,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 447 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 402,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 402 is not in the accepted status list."
+        }
+      }
+    ]
   }
 ]
