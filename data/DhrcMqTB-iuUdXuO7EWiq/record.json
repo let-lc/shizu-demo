@@ -16354,5 +16354,42 @@
         "time": 25.180463
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1702088815998,
+    "method": "GET",
+    "time": {
+      "min": 56.671204,
+      "max": 264.589691,
+      "avg": 122.6193
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 264.589691
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 171.256895
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 60.495936
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 56.671204
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 60.082738
+      }
+    ]
   }
 ]
