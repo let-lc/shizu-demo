@@ -36,15 +36,15 @@
             {item.method}
           </Table.Cell>
           <Table.Cell class="text-center">
-            <span class="text-blue-500">{item.time.min}</span>
+            <span class={item.time.min ? 'text-blue-500' : 'text-red-500'}>{item.time.min}</span>
             <i>ms</i>
           </Table.Cell>
           <Table.Cell class="text-center">
-            <span class="text-blue-500">{item.time.max}</span>
+            <span class={item.time.max ? 'text-blue-500' : 'text-red-500'}>{item.time.max}</span>
             <i>ms</i>
           </Table.Cell>
           <Table.Cell class="text-center">
-            <span class="text-blue-500">{item.time.avg}</span>
+            <span class={item.time.avg ? 'text-blue-500' : 'text-red-500'}>{item.time.avg}</span>
             <i>ms</i>
           </Table.Cell>
           <Table.Cell class="flex w-full justify-center">
@@ -81,7 +81,7 @@
                       <Table.Row>
                         <Table.Cell class="text-center">{idx + 1}</Table.Cell>
                         <Table.Cell class="text-center">{event.success ? 'Yes' : 'No'}</Table.Cell>
-                        <Table.Cell class="text-center">{event.status}</Table.Cell>
+                        <Table.Cell class="text-center">{event.status ?? '-'}</Table.Cell>
                         <Table.Cell class="text-center">
                           {#if event.success}
                             <span class="text-green-500">{event.time}</span>

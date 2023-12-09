@@ -22,6 +22,7 @@
   <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {#each data.servers as server}
       {@const serverColor = SERVER_TYPE_COLOR?.[server.serverType]}
+      {@const reversedRecord = [...server.records].reverse()}
       <Card.Root>
         <Card.Header>
           <div class="flex items-center gap-x-1">
@@ -48,7 +49,6 @@
           <div class="flex h-4 flex-row-reverse flex-wrap justify-end gap-1 overflow-hidden">
             <!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
             {#each { length: 72 } as _, i}
-              {@const reversedRecord = server.records.reverse()}
               {@const hasStatus = i < reversedRecord.length}
               {@const statusColor = getStatusColor(reversedRecord[i])}
               <div

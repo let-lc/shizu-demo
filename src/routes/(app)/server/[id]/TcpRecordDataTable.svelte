@@ -30,15 +30,15 @@
         <Table.Row>
           <Table.Cell>{dayjs(item.ranAt).format('YYYY-MM-DD HH:mm:ss')}</Table.Cell>
           <Table.Cell class="text-center">
-            <span class="text-blue-500">{item.time.min}</span>
+            <span class={item.time.min ? 'text-blue-500' : 'text-red-500'}>{item.time.min}</span>
             <i>ms</i>
           </Table.Cell>
           <Table.Cell class="text-center">
-            <span class="text-blue-500">{item.time.max}</span>
+            <span class={item.time.max ? 'text-blue-500' : 'text-red-500'}>{item.time.max}</span>
             <i>ms</i>
           </Table.Cell>
           <Table.Cell class="text-center">
-            <span class="text-blue-500">{item.time.avg}</span>
+            <span class={item.time.avg ? 'text-blue-500' : 'text-red-500'}>{item.time.avg}</span>
             <i>ms</i>
           </Table.Cell>
           <Table.Cell class="flex w-full justify-center">
