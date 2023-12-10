@@ -63035,5 +63035,156 @@
         "time": 8.91803
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1702184544152,
+    "method": "GET",
+    "time": {
+      "min": 54.826667,
+      "max": 1200.134823,
+      "avg": 221.0396
+    },
+    "events": [
+      {
+        "success": false,
+        "status": 429,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 429 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 599,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 599 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 377,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 377 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 529,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 529 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 279,
+        "time": 62.614402
+      },
+      {
+        "success": true,
+        "status": 258,
+        "time": 1200.134823
+      },
+      {
+        "success": false,
+        "status": 361,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 361 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 232,
+        "time": 55.595624
+      },
+      {
+        "success": false,
+        "status": 503,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 503 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 489,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 489 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 236,
+        "time": 59.928626
+      },
+      {
+        "success": true,
+        "status": 220,
+        "time": 55.040307
+      },
+      {
+        "success": false,
+        "status": 548,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 548 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 323,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 323 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 318,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 318 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 323,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 323 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 410,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 410 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 264,
+        "time": 54.826667
+      },
+      {
+        "success": true,
+        "status": 226,
+        "time": 59.136711
+      },
+      {
+        "success": false,
+        "status": 441,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 441 is not in the accepted status list."
+        }
+      }
+    ]
   }
 ]
