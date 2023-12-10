@@ -12800,5 +12800,42 @@
         "time": 8.220702
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1702239762190,
+    "method": "POST",
+    "time": {
+      "min": 4.435583,
+      "max": 245.704892,
+      "avg": 56.0714
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 245.704892
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 20.821684
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.63363
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.761319
+      },
+      {
+        "success": true,
+        "status": 200,
+        "time": 4.435583
+      }
+    ]
   }
 ]
