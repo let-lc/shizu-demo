@@ -26470,5 +26470,54 @@
         "time": 56.160685
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1702262741651,
+    "method": "GET",
+    "time": {
+      "min": 144.803769,
+      "max": 144.803769,
+      "avg": 144.8038
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 200,
+        "time": 144.803769
+      },
+      {
+        "success": false,
+        "status": 403,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 403 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 403,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 403 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 403,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 403 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 403,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 403 is not in the accepted status list."
+        }
+      }
+    ]
   }
 ]
