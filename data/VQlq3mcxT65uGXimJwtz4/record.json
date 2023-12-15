@@ -132953,5 +132953,168 @@
         "time": 636.260424
       }
     ]
+  },
+  {
+    "type": "http",
+    "ranAt": 1702601244786,
+    "method": "GET",
+    "time": {
+      "min": 69.209393,
+      "max": 355.982645,
+      "avg": 165.3021
+    },
+    "events": [
+      {
+        "success": true,
+        "status": 285,
+        "time": 355.982645
+      },
+      {
+        "success": false,
+        "status": 510,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 510 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 402,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 402 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 241,
+        "time": 70.714211
+      },
+      {
+        "success": false,
+        "status": 338,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 338 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 392,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 392 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 370,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 370 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 304,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 304 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 487,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 487 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 556,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 556 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 375,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 375 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 485,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 485 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 402,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 402 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 401,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 401 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 398,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 398 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 312,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 312 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 515,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 515 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 346,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 346 is not in the accepted status list."
+        }
+      },
+      {
+        "success": false,
+        "status": 416,
+        "error": {
+          "name": "Invalid Status",
+          "message": "Status 416 is not in the accepted status list."
+        }
+      },
+      {
+        "success": true,
+        "status": 278,
+        "time": 69.209393
+      }
+    ]
   }
 ]
